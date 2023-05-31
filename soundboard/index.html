@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="css/styles.css" />
+   
     <link rel="icon" sizes="192x192" href="img/mlg-favicon.png" />
     <link rel="shortcut icon" href="img/mlg-favicon.png" type="image/x-icon" />
     <link rel="apple-touch-icon" href="img/mlg-favicon.png" type="image/x-icon" />
@@ -20,10 +20,114 @@
     <meta name="author" content="3kh0" />
   </head>
   <body>
-    <h1>Online Soundboard</h1>
-    <h2>
+    <style>
+      body {
+  font-size: 12px;
+  background: #1c1c1c !important;
+  border-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sound {
+  color: white;
+  width: 100px;
+  height: 170px;
+}
+.download {
+  cursor: pointer;
+}
+.name {
+  text-align: center;
+  font-size: 15px;
+}
+#instants_container {
+  margin: 30px auto 0;
+  text-align: center;
+  border-style: none;
+}
+.instant {
+  position: relative;
+  vertical-align: top;
+  width: 94px;
+  border-style: none;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-right: 5px;
+  margin-left: 5px;
+  word-wrap: break-word;
+}
+.small-button {
+  width: 94px;
+  height: 89px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 3px;
+  margin-top: 0px;
+  border-style: none;
+  position: absolute;
+  background: url(../img/button.png) no-repeat;
+  cursor: pointer;
+}
+.small-button:active {
+  background: url(../img/button-pressed.png) no-repeat;
+  cursor: progress;
+}
+.small-button-background {
+  width: 86px;
+  height: 84px;
+  margin-top: 3px;
+  margin-left: 6px;
+  position: absolute;
+}
+.small-button-shadow {
+  width: 94px;
+  height: 89px;
+  margin-bottom: 5px;
+  background: url(../img/button-shadow.png) no-repeat;
+}
+.circle {
+  border-radius: 50%;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(44, 44, 44, 0);
+}
+.flex-container > div {
+  padding: 5px;
+}
+div.control {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  width: auto;
+  padding: 3px;
+  color: white;
+  padding: 5px 5px;
+  border-radius: 15px;
+  background: #606060;
+  z-index: 100;
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+
+  padding: 5px 5px;
+  color: white;
+  background-color: rgb(54, 54, 54);
+}
+
+.woah {
+  cursor: pointer;
+}
+
+    </style>
+    <h1 style="text-align: center; color: white;">Online Soundboard</h1>
+    <h2 style="text-align: center; color: white; text-decoration: none;">
       Just click on the colorful buttons to play the sound.<br />
-      <a href="https://forms.gle/7d2Nu6CYouUhDLjD9">Click here to submit a sound to be added!</a>
+      <a style="color: white;" href="https://forms.gle/7d2Nu6CYouUhDLjD9">Click here to submit a sound to be added!</a>
     </h2>
     <script>
       // functions for audio control menu
@@ -1798,8 +1902,8 @@
           <button class="small-button" onclick="document.getElementById('explodingtoilet').play();"></button>
           <div class="small-button-shadow"></div>
           <p class="name">
-            <button onclick="window.location.href='sounds/explodingtoilet.mp3'">Download</button><br>
-            Skibidibopmmdada BHBHBHHKKHB<br>
+            <button onclick="window.location.href='sounds/explodingtoilet.mp3'">Download</button><br style="font-size: smaller;">
+            Skibidi...<br>
           </p>
         </div>
       </div>
